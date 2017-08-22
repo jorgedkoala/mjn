@@ -1,0 +1,19 @@
+<ion-menu side="left" [enabled]="true" [content]="content">
+  <ion-badge *ngIf="badge > 0" item-right>{{badge}}</ion-badge>
+      <ion-toolbar color="primary">
+    <ion-title color="secondary">Menu</ion-title>
+  </ion-toolbar>
+
+  <ion-content color="primary">
+    <br>
+    <ion-list >
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title | translate}}
+        <ion-badge *ngIf="p.title == 'menu.notificaciones'" item-right>{{badge}}</ion-badge>
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage"  #content swipeBackEnabled="true"></ion-nav>

@@ -1,0 +1,28 @@
+{
+    "diario":"diari",
+    "send":"guarda",
+    "enviadas":"enviades",
+    "intensidad":"intensitat",
+    "hora":"hora",
+    "verDiario":"Veure diari",
+    "suave":"suau",
+    "media":"mitja",
+    "fuerte":"forta",
+    "menu":{
+        "home":"Inici",
+        "verDiario":"Els teus registres",
+        "notificaciones":"Notificacions",
+        "contact":"Contactar",
+        "config":"Configurar"
+    },
+    "mensajes":{
+        "ok":"Enviament correcte",
+        "notok":"s'ha produït un error al enviar, torna-ho a intentar"
+    },
+    "10minutos":"fa 10 minuts",
+    "20minutos":"fa 20 minuts",
+    "mediahora":"fa mig hora",
+    "unahora":"fa una hora",
+    "custom":"Selecciona hora",
+    "setIdioma":"Selecciona idioma"
+}

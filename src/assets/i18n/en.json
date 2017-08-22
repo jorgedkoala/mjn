@@ -1,0 +1,28 @@
+{
+    "diario":"diary",
+    "send":"send",
+    "enviadas":"sent",
+    "intensidad":"intensity",
+    "hora":"hour",
+    "verDiario":"View diary",
+    "suave":"light",
+    "media":"medium",
+    "fuerte":"strong",
+    "menu":{
+        "home":"Home",
+        "verDiario":"Your Rows",
+        "notificaciones":"Notifications",
+        "contact":"Contact",
+        "config":"Config"
+    },
+    "mensajes":{
+        "ok":"ok",
+        "notok":"Some went wrong, please try again"
+    },
+    "10minutos":"10 minutes ago",
+    "20minutos":"20 minutes ago",
+    "mediahora":"half hour ago",
+    "unahora":"one hour ago",
+    "custom":"custom hour",
+    "setIdioma":"Language selection"
+}

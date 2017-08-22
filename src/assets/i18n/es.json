@@ -1,0 +1,28 @@
+{
+    "diario":"diario",
+    "send":"enviar",
+    "enviadas":"enviadas",
+    "intensidad":"intensidad",
+    "hora":"hora",
+    "verDiario":"Ver diario",
+    "suave":"suave",
+    "media":"media",
+    "fuerte":"fuerte",
+    "menu":{
+        "home":"Inicio",
+        "verDiario":"Tus registros",
+        "notificaciones":"Notificaciones",
+        "contact":"Contactar",
+        "config":"Configurar"
+    },
+    "mensajes":{
+        "ok":"Envio correcto",
+        "notok":"Se ha producido un error en el envio"
+    },
+    "10minutos":"Hace 10 minutos",
+    "20minutos":"Hace 20 minutos",
+    "mediahora":"Hace media hora",
+    "unahora":"Hace una hora",
+    "custom":"Selecciona hora",
+    "setIdioma":"Selecciona Idioma"
+}

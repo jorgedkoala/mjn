@@ -1,0 +1,29 @@
+page-diario {
+.suave{
+    color: yellow;
+}
+.medio{
+    color: orange;
+}
+.fuerte{
+    color: orange;
+    color: darkorange;
+    color: darksalmon;
+}
+.muyfuerte{
+    color: red;
+}
+.enviadas{
+    position: absolute;
+    right: 10px;
+}
+.send-button{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+.selectHour{
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+}

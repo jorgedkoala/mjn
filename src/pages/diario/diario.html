@@ -1,0 +1,48 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{'diario' | translate}}
+      <span class="enviadas">
+      {{entradaDiario.contador}} {{'enviadas' | translate }}
+      </span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+<form #crisiForm="ngForm">
+  <ion-item>
+    <ion-label>{{'intensidad' | translate}} {{intensidad |translate}}</ion-label>
+    <!--<ion-range min="0" max="100" step="25" snaps="true" [color]="(intensidad<50)? 'secondary' : 'danger'" [(ngModel)]="intensidad"></ion-range>-->
+
+    <ion-range name="intensidad" (ionChange)="setIntensidad()" min="1" max="3" step="1" snaps="true" [color]="(entradaDiario.intensidad<2)? 'suave' : (entradaDiario.intensidad<3)? 'medio' : 'muyfuerte'" [(ngModel)]="entradaDiario.intensidad">
+         <ion-icon range-left small color="ss" name="thermometer"></ion-icon>
+        <ion-icon range-right color="danger" name="thermometer"></ion-icon>
+        </ion-range>
+  </ion-item>
+
+<ion-list>
+  <ion-item>
+    <!--<ion-label>{{'hora' | translate}}</ion-label>-->
+    <ion-select name="hora" required class="selectHour" placeholder="{{'hora' | translate}}" [(ngModel)]="hora" (ionChange)="selectHora()">
+      <ion-option *ngFor="let h of horas" value="{{h.valor}}">{{h.description | translate}}</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-item *ngIf="hora==0">
+  <ion-label>{{'hora' | translate}}</ion-label>
+  <ion-datetime name="hora" required (ionChange)="setTime()"	class="ios" displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="time"></ion-datetime>
+</ion-item>
+<span class="send-button">
+<button ion-button icon-left (click)="send()" type="submit" [disabled]="!crisiForm.form.valid">
+  <ion-icon name="send"></ion-icon>
+  {{'send' | translate}}
+</button>
+</span>
+</form>
+</ion-content>
