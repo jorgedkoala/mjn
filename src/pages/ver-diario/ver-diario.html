@@ -16,8 +16,9 @@
 
 <ion-content padding>
   <ion-card>
-Puedes visualizar todos tus datos en forma de tabla, gráfico o calendario, podrás descargar la tabla para analizar los datos con excel, o descargar los gráficos en formato pdf.
-Puedes hacer click en el botón para verlo desde tu teléfono, (pon el teléfono en horizontal para ver bien los datos). O sigue las instrucciones abajo para verlo con más detalle desde tu ordenador.
+      {{'verDiario1' | translate}}
+      <br>
+      {{'verDiario2' | translate}}
   </ion-card>
 <span class="ver-diario">
 <button ion-button icon-left (click)="verDiario()">
@@ -28,12 +29,12 @@ Puedes hacer click en el botón para verlo desde tu teléfono, (pon el teléfono
 
 <ion-card>
   <ion-card-header>
-    Acceso desde tu ordenador
+      {{'acceso' | translate}}
   </ion-card-header>
   <ion-card-content>
-    Go to http://mjn.ntskoala.com
-    introduce tu datos<br> 
-    Usuario: {{user}}<br>
+      {{'ir' | translate}} http://app.mjn.cat<br> 
+    {{'introduceDatos' | translate}}<br> 
+    {{'usuario' | translate}}: {{user}}<br>
     Password: {{password}}<br>
   </ion-card-content>
 </ion-card>

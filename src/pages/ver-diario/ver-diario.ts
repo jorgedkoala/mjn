@@ -32,7 +32,7 @@ public uuid:string;
     }
   }
 verDiario(){
- window.open('http://mjn.ntskoala.com?uuid='+this.uuid+'', '_system', 'location=yes');
+ window.open('http://app.mjn.cat?uuid='+this.uuid+'', '_system', 'location=yes');
 //  window.open('http://localhost:4200?uuid='+this.uuid+'', '_system', 'location=yes');
 }
 }

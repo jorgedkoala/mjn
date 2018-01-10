@@ -80,6 +80,7 @@ export class MyApp {
             }else{
           usuario = new Usuario(this.device.uuid,this.device.uuid.substr(4,4),this.device.uuid.substr(0,4),'',new Date(),new Date());
             }
+
             console.log("setting user",usuario);
           this.db.set("user",JSON.stringify(usuario));
           console.log("getUser",this.db.get("user"));
@@ -128,6 +129,7 @@ export class MyApp {
  }
 
 setUser(usuario: Usuario){
+  
 usuario.ultimoacceso = new Date();
 //this.entradaDiario.uuid = 'web' + (Math.random()*100).toString();
 //this.loader.present();
@@ -135,8 +137,11 @@ console.log("usuario",usuario);
 let params = "&user="+usuario.user+"&password="+usuario.password;
 this.server.getObjects(URLS.LOGIN,params).subscribe(
 (resultado)=>{
+  console.log('login1',resultado);
 if (resultado.success == 'true'){
+  console.log('login2',usuario);
 sessionStorage.setItem('token',resultado.token)
+
 let param = "&entidad=users";
 this.server.postObject(URLS.STD_ITEM,usuario,param).subscribe(
     (data)=>{

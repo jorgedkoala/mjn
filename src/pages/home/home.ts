@@ -22,6 +22,7 @@ import { Servidor } from '../../providers/server';
 export class HomePage {
   public dbNotificaciones: Storage;
   public notificaciones:any[];
+  public error:string=null;
   constructor(public navCtrl: NavController, private server: Servidor, public platform:Platform, public evento: Events) {
     console.log('constructor home');
 
@@ -38,15 +39,21 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    // console.log('ionViewDidLoad Home Page');
-    // this.server.getObjects(URLS.STD_ITEM,"").subscribe(
-    //   (data) => {
-    //     if (data.success){
-    //       console.log(data);
 
-    //     }
-    //   }
-    // );
+    console.log('ionViewDidLoad Home Page');
+    try{
+    this.server.getObjects(URLS.SEGURIDAD,"").subscribe(
+      (data) => {
+        if (data.success == 'ERROR'){
+          console.log(data);
+          this.error = data.success;
+          console.log(data,this.error,data.success);
+        }
+      }
+    );
+  }catch(e){
+
+  }
   }
 
 }

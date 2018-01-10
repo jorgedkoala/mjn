@@ -15,5 +15,10 @@
 </ion-header>
 
 <ion-content padding>
-  <page-diario></page-diario>
+  <div *ngIf="error=='ERROR'">
+      <ion-item text-wrap color="alert">
+          ERROR ADMINISTRATIVO CONSULTE AL ADMINISTRADOR.
+        </ion-item>
+  </div>
+  <page-diario *ngIf="error==null"></page-diario>
 </ion-content>

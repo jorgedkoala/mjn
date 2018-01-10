@@ -24,5 +24,11 @@
     "mediahora":"half hour ago",
     "unahora":"one hour ago",
     "custom":"custom hour",
-    "setIdioma":"Language selection"
+    "setIdioma":"Language selection",
+    "verDiario1":"You can view all your data in table format, graphic or calendar, you can download the table to analyze the data with excel, or download the graphics in pdf format.",
+    "verDiario2":"You can click on the button to see it from your phone, (put the phone horizontally to see the data well). Or follow the instructions below to see it in more detail from your computer.",
+    "acceso":"Access from your computer",
+    "ir":"Go to ",
+    "introduceDatos":"Enter your data",
+    "usuario":"User"
 }

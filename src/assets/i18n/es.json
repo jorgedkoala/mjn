@@ -24,5 +24,11 @@
     "mediahora":"Hace media hora",
     "unahora":"Hace una hora",
     "custom":"Selecciona hora",
-    "setIdioma":"Selecciona Idioma"
+    "setIdioma":"Selecciona Idioma",
+    "verDiario1":"Puedes visualizar todos tus datos en forma de tabla, gráfico o calendario, podrás descargar la tabla para analizar los datos con excel, o descargar los gráficos en formato pdf.",
+    "verDiario2":"Puedes hacer click en el botón para verlo desde tu teléfono, (pon el teléfono en horizontal para ver bien los datos). O sigue las instrucciones abajo para verlo con más detalle desde tu ordenador.",
+    "acceso":"Acceso desde tu ordenador",
+    "ir":"Ir a ",
+    "introduceDatos":"Introduce tu datos",
+    "usuario":"Usuario"
 }

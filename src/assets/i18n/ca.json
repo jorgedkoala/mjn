@@ -24,5 +24,11 @@
     "mediahora":"fa mig hora",
     "unahora":"fa una hora",
     "custom":"Selecciona hora",
-    "setIdioma":"Selecciona idioma"
+    "setIdioma":"Selecciona idioma",
+    "verDiario1":"Pots visualitzar totes les teves dades en forma de taula, gràfic o calendari, podràs descarregar la taula per analitzar les dades amb excel, o descarregar els gràfics en format pdf.",
+    "verDiario2":"Pots fer clic al botó per veure-ho des del teu telèfon, (posa el telèfon en horitzontal per veure bé les dades). O segueix les instruccions a sota per veure-ho amb més detall des del teu ordinador.",
+    "acceso":"Accés des del teu ordinador",
+    "ir":"Anar a ",
+    "introduceDatos":"Introdueix les teves dades",
+    "usuario":"Usuari"
 }
